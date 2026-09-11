@@ -8,7 +8,7 @@ staff_username = "staff"
 staff_password = "12345"
 
 manager_username = "manager"
-manager_password = "admin123"
+manager_password = "manager123"
 
 # Inventory
 
