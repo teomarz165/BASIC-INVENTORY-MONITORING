@@ -157,23 +157,6 @@ def check_low_stock():
     if found == False:
         print("No low stock items.")
 
-
-def check_available_stock():
-    print("\n===== AVAILABLE STOCK =====")
-
-    for item in inventory:
-
-        if inventory[item]["quantity"] > LOW_STOCK:
-
-            print(
-                item.title(),
-                "-",
-                inventory[item]["quantity"],
-                inventory[item]["unit"],
-                "- Available"
-            )
-
-
 # STAFF MENU
 
 def staff_menu():
@@ -226,8 +209,7 @@ def manager_menu():
         print("1. View Inventory")
         print("2. Search Item")
         print("3. Check Low Stock")
-        print("4. Check Available Stock")
-        print("5. Logout")
+        print("4. Logout")
 
         manager_choice = input("Choose an option: ")
 
@@ -241,9 +223,6 @@ def manager_menu():
             check_low_stock()
 
         elif manager_choice == "4":
-            check_available_stock()
-
-        elif manager_choice == "5":
             print("Manager logged out.")
             break
 
