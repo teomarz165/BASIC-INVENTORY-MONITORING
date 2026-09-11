@@ -1,9 +1,7 @@
-# ==========================================
 # BASIC STOCK INVENTORY MONITORING SYSTEM
 # MJ MIDDLE EASTERN HALAL RESTAURANT
-# ==========================================
 
-LOW_STOCK = 5
+LOW_STOCK = 10
 
 # Accounts
 staff_username = "staff"
@@ -13,12 +11,10 @@ manager_username = "manager"
 manager_password = "admin123"
 
 # Inventory
+
 inventory = {}
 
-
-# ==========================================
 # LOGIN FUNCTIONS
-# ==========================================
 
 def staff_login():
     username = input("Enter username: ")
@@ -43,10 +39,7 @@ def manager_login():
         print("Invalid username or password.")
         return False
 
-
-# ==========================================
 # INVENTORY FUNCTIONS
-# ==========================================
 
 def add_inventory():
     item = input("Enter item name: ").lower()
@@ -181,9 +174,7 @@ def check_available_stock():
             )
 
 
-# ==========================================
 # STAFF MENU
-# ==========================================
 
 def staff_menu():
 
@@ -225,10 +216,7 @@ def staff_menu():
         else:
             print("Invalid choice.")
 
-
-# ==========================================
 # MANAGER MENU
-# ==========================================
 
 def manager_menu():
 
@@ -262,10 +250,7 @@ def manager_menu():
         else:
             print("Invalid choice.")
 
-
-# ==========================================
 # MAIN SYSTEM
-# ==========================================
 
 def main():
 
